@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default class Header extends React.Component{
+export default class NavLeft extends React.Component{
     render(){
         return (
-            <div>
+            <div style={{backgroundColor: 'red'}}>
                 This is Left
             </div>
         )
