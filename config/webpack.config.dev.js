@@ -146,8 +146,8 @@ module.exports = {
             options: {
               plugins:[
                 ['import',[{
-                  libraryName: 'antd', //babel-plugin-import antd按需加载
-                  style: 'css' //设置为true 会同时编译less和css可以实现修改主题 具体主题修改在@配置antd的主题处进行
+                  libraryName: 'antd',
+                  style: 'css' 
                 }]]
               ],
               // This is a feature of `babel-loader` for webpack (not Babel itself).
@@ -192,14 +192,7 @@ module.exports = {
                 },
               },
               {
-                loader: require.resolve('less-loader'),
-                // 配置antd的主题
-                // options: {
-                //   modules: false,
-                //   modifyVars: {
-                //     "@primary-color": "#f9c700"
-                //   }
-                // }
+                loader: require.resolve('less-loader')
               }
             ],
           },
