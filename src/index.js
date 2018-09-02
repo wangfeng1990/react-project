@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Router from './router'
 import './index.css';
-import Life from './pages/demo/Life';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<Life />, document.getElementById('root'));
+ReactDOM.render(<Router />, document.getElementById('root'));
 registerServiceWorker();
