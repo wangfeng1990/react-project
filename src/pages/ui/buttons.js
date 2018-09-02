@@ -4,19 +4,19 @@ import './ui.less'
 export default class Buttons extends React.Component {
 
     state = {
-        loading: true,
-        size: 'default'
+        loading:true,
+        size:'default'
     }
 
-    handleCloseLoading = ()=>{
+    handleCloseLoading=()=>{
         this.setState({
-            loading: false
-        })
+            loading:false
+        });
     }
 
     handleChange = (e)=>{
         this.setState({
-            size: e.target.value
+            size:e.target.value
         })
     }
 
@@ -30,7 +30,7 @@ export default class Buttons extends React.Component {
                     <Button type="danger">Imooc</Button>
                     <Button disabled>Imooc</Button>
                 </Card>
-                 <Card title="图形按钮" className="card-wrap">
+                <Card title="图形按钮" className="card-wrap">
                     <Button icon="plus">创建</Button>
                     <Button icon="edit">编辑</Button>
                     <Button icon="delete">删除</Button>

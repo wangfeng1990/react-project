@@ -9,7 +9,7 @@ export default class Loadings extends React.Component{
         return (
             <div>
                 <Card title="Spin用法" className="card-wrap">
-                    <Spin size="small" />
+                    <Spin size="small"/>
                     <Spin style={{margin:'0 10px'}}/>
                     <Spin size="large"/>
                     <Spin indicator={icon} style={{ marginLeft: 10 }} spinning={true}/>

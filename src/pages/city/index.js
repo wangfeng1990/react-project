@@ -136,7 +136,6 @@ export default class City extends React.Component{
                     }}
                     onOk={this.handleSubmit}
                 >
-                {/*外界可以通过cityForm去取值  */}
                     <OpenCityForm wrappedComponentRef={(inst)=>{this.cityForm = inst;}}/>
                 </Modal>
             </div>
