@@ -56,6 +56,7 @@ export default class Order extends React.Component{
                 this.setState({
                     isRoleVisible:false
                 })
+                this.roleForm.props.form.resetFields();
                 this.requestList();
             }
         })

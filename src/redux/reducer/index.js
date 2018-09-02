@@ -1,5 +1,5 @@
 /**
- * reducer
+ * reducer 数据处理
  */
 
 import { combineReducers } from 'redux'

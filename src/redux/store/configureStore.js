@@ -7,6 +7,7 @@ import { composeWithDevTools } from 'redux-devtools-extension'
 const initialState = {
     menuName: ''
 }
-const configureStore = () => createStore(reducer, initialState);
+// const configureStore = () => createStore(reducer, initialState);
+const configureStore = () => createStore(reducer, composeWithDevTools());
 
 export default configureStore;
