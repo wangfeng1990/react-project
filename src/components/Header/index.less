@@ -1,11 +1,23 @@
-@import '../../style/default.less';
+@import './../../style/default.less';
 .header{
-    background-color:  @colorM;
+    background-color: @colorM;
     .header-top{
         height: 60px;
         line-height: 60px;
         padding: 0 20px;
         text-align: right;
+        .logo{
+            line-height: 60px;
+            text-align: left;
+            font-size: 18px;
+            img{
+                height: 40px;
+                vertical-align: middle;
+            }
+            span{
+                margin-left: 5px;
+            }
+        }
         a{
             margin-left: 40px;
         }
@@ -16,33 +28,23 @@
         padding: 0 20px;
         border-top: 1px solid #f9c700;
         .breadcrumb-title{
-            width: 150px;
-            height: 100%;
             text-align: center;
-            font-size: 18px;
-            white-space: nowrap;
             font-size: @fontC;
             &:after{
                 position: absolute;
                 content: '';
-                top: 39px;
-                left: 63px;
+                left:73px;
+                top:39px;
                 border-top: 9px solid @colorM;
                 border-left: 12px solid transparent;
                 border-right: 12px solid transparent;
-
             }
         }
         .weather{
-            float: right;
             text-align: right;
             font-size: 14px;
             .date{
                 margin-right: 10px;
-                vertical-align: middle
-            }
-            .weather-detail{
-                margin-left: 5px;
                 vertical-align: middle;
             }
             .weather-img{
@@ -50,6 +52,16 @@
                     height: 15px;
                 }
             }
+            .weather-detail{
+                margin-left: 5px;
+                vertical-align: middle;
+            }
         }
     }
+}
+.simple-page{
+  .header-top{
+    background:#1890ff;
+    color:@colorM;
+  }
 }
