@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import './style/iconfont/iconfont.less'
 
 class App extends Component {
   render() {
